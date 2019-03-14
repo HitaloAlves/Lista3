@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Exercicio 1 </title>
+	<meta charset= "utf-8">
+	<style type="text/css">
+		.verm{
+			background-color: red;
+		}
+		.verd{
+			background-color: green;
+		}
+		.azu{
+			background-color: blue;
+		}
+		.ama{
+			background-color: yellow;
+		}
+	</style>
+	<script language="javascript" type="text/javascript">
+		function mudarCor(cor){
+			
+			switch (cor){
+				case 1: 
+					bg.className='verm';
+				break;
+				case 2:
+					bg.className="verd";
+				break;
+				case 3:
+					bg.className="azu";
+				break;
+				case 4:
+					bg.className="ama";
+				break;
+			}
+		}
+	</script>
+
+</head>
+<body id="bg" >
+		<div>
+				<a href="#" type="button" onmouseover="javascript:mudarCor(1)">Vermelho</a>
+		</div>
+		<div>
+			<a href="#" type="button" onmouseover="javascript:mudarCor(2)">Verde</a>
+		</div>
+		<div>
+			<a href="#" type="button" onmouseover="javascript:mudarCor(3)">Azul</a>
+		</div>
+		<div>
+			<a href="#" type="button" onmouseover="javascript:mudarCor(4)">Amarelo</a>
+		</div>
+</body>
+</html>

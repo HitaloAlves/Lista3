@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Exercicio 9 </title>
+	<meta charset= "utf-8">
+
+	<script language="javascript" type="text/javascript">
+		function Interc(){
+
+		document.getElementById('n3').value = "";
+			
+    var n1 = document.getElementById('n1').value;
+    var n2 = document.getElementById('n2').value;
+
+    if (n1.length < n2.length) {
+      var res = n2.length;
+    } else {
+      var res = n1.length;
+    }
+
+    for (i = 0; i < res; i++) {
+      document.getElementById('n3').value += n1.substring(i, i + 1) + n2.substring(i, i + 1);
+    }
+}
+</script>
+
+</head>
+<body>
+
+		<div>
+			 Primeiro Nome: <input id="n1" type="text" name="pname" ><br>
+			 
+			 Segundo Nome: <input id="n2" type="text" name="sname" onchange="javascript:Interc()"><br>
+
+			 <input id="n3" type="text" name="intercalar"  disabled>
+		</div>
+
+</body>
+</html>
